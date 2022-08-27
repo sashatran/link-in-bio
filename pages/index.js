@@ -1,13 +1,12 @@
 import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
-import Link from "next/link";
+import Script from "next/script";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // import { faInstagram } from '@fortawesome/free-solid-svg-icons'
 import {
   faInstagram,
   faTwitter,
-  faVero,
   faYoutube,
   faTiktok,
 } from "@fortawesome/free-brands-svg-icons";
@@ -19,18 +18,18 @@ export default function Home({ links }) {
         <title>Sasha Tran - link in bio</title>
         <meta name="description" content="Sasha Tran" />
         <link rel="icon" href="/favicon.ico" />
-        <script
+        <Script
           async
           src="https://www.googletagmanager.com/gtag/js?id=UA-93030884-9"
-        ></script>
-        <script>
+        ></Script>
+        <Script>
           {`window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
 
           gtag('config', process.env.GOOGLE_ANALYTICS)`}
           ;
-        </script>
+        </Script>
       </Head>
       <main className={styles.main}>
         <div className={styles.header}>
