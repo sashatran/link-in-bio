@@ -45,7 +45,12 @@
 }
 
 .social li {
-  margin: 0 10px;
+  margin: 0 15px;
+}
+
+.icon {
+  width: 16px;
+  height: 16px;
 }
 
 
@@ -73,10 +78,6 @@
   gap: 20px;
   width: 100%;
   border: 1px solid transparent;
-}
-
-.link:hover {
-  border-color: rgba(148, 148, 255, 0.735);
 }
 
 .link p {
@@ -113,9 +114,7 @@
   -webkit-text-fill-color: transparent;
 }
 
-.icon {
-  width: 15px;
-}
+
 
 .copyContainer {
   width: 100%;
