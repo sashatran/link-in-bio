@@ -25,16 +25,16 @@ export default function Home({ links }) {
           <div className={styles.headerImg}></div>
           <ul className={styles.social}>
             <li>
-              <a href="https://tiktok.com/@sasha.codes" target="_blank"><FontAwesomeIcon className={styles.icon} icon={faTiktok} /></a>
+              <a href="https://tiktok.com/@sasha.codes" target="_blank" rel="noreferrer" ><FontAwesomeIcon className={styles.icon} icon={faTiktok} /></a>
             </li>
             <li>
-            <a href="https://instagram.com/sasha.codes" target="_blank"><FontAwesomeIcon className={styles.icon} icon={faInstagram} /> </a>
+            <a href="https://instagram.com/sasha.codes" target="_blank" rel="noreferrer" ><FontAwesomeIcon className={styles.icon} icon={faInstagram} /> </a>
             </li>
             <li>
-              <a href="https://twitter.com/sashattran" target="_blank"><FontAwesomeIcon className={styles.icon} icon={faTwitter} /></a>
+              <a href="https://twitter.com/sashattran" target="_blank" rel="noreferrer" ><FontAwesomeIcon className={styles.icon} icon={faTwitter} /></a>
             </li>
             <li>
-              <a href="https://www.youtube.com/c/sashax" target="_blank"><FontAwesomeIcon className={styles.icon} icon={faYoutube} /></a>
+              <a href="https://www.youtube.com/c/sashax" target="_blank" rel="noreferrer" ><FontAwesomeIcon className={styles.icon} icon={faYoutube} /></a>
             </li>
             <li>Vero</li>
           </ul>
@@ -46,6 +46,7 @@ export default function Home({ links }) {
               <a
                 href={link.fields.json.url}
                 target="_blank"
+                rel="noreferrer"
                 className={styles.link}
                 key={link.sys.id}
               >
