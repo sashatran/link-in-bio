@@ -21,7 +21,7 @@ export default class MyDocument extends Document {
           `,
             }}
           />
-          <title>Sasha Tran - link in bio</title>
+         
           <meta name="description" content="Sasha Tran" />
           <link rel="icon" href="/favicon.ico" />
         </Head>

@@ -51,7 +51,8 @@ export default function Home({ links }) {
                 <FontAwesomeIcon className={styles.icon} icon={faYoutube} />
               </a>
             </li>
-            <li>Vero</li>
+            <a href="https://vero.co/sashatran/" target="_blank"
+                rel="noreferrer">Vero</a>
           </ul>
         </div>
 
