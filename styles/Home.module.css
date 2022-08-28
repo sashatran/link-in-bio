@@ -1,12 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Kaisei+Opti:wght@400;700&family=Source+Sans+Pro:wght@300;400;600;900&display=swap");
 
-
-
 .container {
   padding: 0 2rem;
   background: linear-gradient(45deg, #a0aedd, #c0e7b0);
   color: #333;
-
 }
 
 .main {
