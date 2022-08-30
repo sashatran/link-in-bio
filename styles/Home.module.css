@@ -97,7 +97,6 @@
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 50px;
-  margin-top: 15px;
 }
 
 .discountCode {
@@ -127,5 +126,9 @@
 @media (max-width: 420px) {
   .link {
     flex-direction: column;
+  }
+
+  .linkPhoto {
+    margin-top: 15px;
   }
 }
