@@ -50,7 +50,6 @@
   height: 16px;
 }
 
-
 .linkContainer {
   margin-top: 20px;
   width: 100%;
@@ -59,7 +58,6 @@
   justify-content: center;
   align-items: center;
 }
-
 
 .link {
   max-width: 450px;
@@ -79,7 +77,6 @@
 
 .link p {
   margin: 10px;
-
 }
 .linkHeader {
   font-weight: 600;
@@ -111,16 +108,23 @@
   -webkit-text-fill-color: transparent;
 }
 
-
-
 .copyContainer {
   width: 100%;
 }
 
+.footer {
+  padding: 13px 0;
+}
+
+.footer p {
+  margin: 0;
+  text-align: center;
+  font-size: 13px;
+  color: #111;
+}
 
 @media (max-width: 420px) {
   .link {
     flex-direction: column;
-    
   }
 }
