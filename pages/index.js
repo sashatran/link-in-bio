@@ -1,4 +1,3 @@
-import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -51,8 +50,13 @@ export default function Home({ links }) {
                 <FontAwesomeIcon className={styles.icon} icon={faYoutube} />
               </a>
             </li>
-            <a href="https://vero.co/sashatran/" target="_blank"
-                rel="noreferrer">Vero</a>
+            <a
+              href="https://vero.co/sashatran/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Vero
+            </a>
           </ul>
         </div>
 
@@ -111,7 +115,7 @@ export async function getStaticProps() {
 
   return {
     props: {
-      links: res.items
+      links: res.items,
     },
   };
 }
