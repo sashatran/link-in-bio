@@ -16,7 +16,7 @@ export default function Home({ links }) {
           <ul className={styles.social}>
             <li>
               <a
-                href="https://tiktok.com/@sasha.codes"
+                href="https://tiktok.com/@sasha.tran"
                 target="_blank"
                 rel="noreferrer"
               >
