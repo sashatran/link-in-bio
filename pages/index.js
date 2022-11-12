@@ -10,10 +10,10 @@ import {
 export default function Home({ links }) {
   return (
     <div className={styles.container}>
-      <main className={styles.main}>
-        <div className={styles.header}>
+      <main className={`${styles.main} flex`}>
+        <div className={`${styles.header} flex`}>
           <div className={styles.headerImg}></div>
-          <ul className={styles.social}>
+          <ul className={`${styles.social} flex`}>
             <li>
               <a
                 href="https://tiktok.com/@sasha.tran"
@@ -59,15 +59,14 @@ export default function Home({ links }) {
             </a>
           </ul>
         </div>
-
-        <div className={styles.linkContainer}>
+        <div className={`${styles.linkContainer} flex`}>
           {links.map((link) => {
             return (
               <a
                 href={link.fields.json.url}
                 target="_blank"
                 rel="noreferrer"
-                className={styles.link}
+                className={`${styles.link} flex`}
                 key={link.sys.id}
               >
                 {link.fields.linkPhoto && (
@@ -96,6 +95,8 @@ export default function Home({ links }) {
       </main>
       <footer className={styles.footer}>
         <p>made with nextjs</p>
+        <p>made by Sasha</p>
+        <p></p>
       </footer>
     </div>
   );
