@@ -7,7 +7,8 @@ import {
   faTiktok,
 } from "@fortawesome/free-brands-svg-icons";
 
-export default function Home({ links }) {
+export default function Home({ links, imageLink }) {
+  console.log(imageLink);
   return (
     <div className={styles.container}>
       <main className={`${styles.main} flex`}>
@@ -59,6 +60,33 @@ export default function Home({ links }) {
             </a>
           </ul>
         </div>
+        <div className={styles.squareLinkWrapper}>
+          {imageLink.map((item) => {
+            return (
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href={item.fields.json.url}
+                className={styles.squareLinkContainer}
+                key={item.sys.id}
+              >
+                <div
+                  className={styles.squareLinkImg}
+                  style={{
+                    backgroundImage: `url(${item.fields.image.fields.file.url})`,
+                  }}
+                ></div>
+                <div className={styles.squareLinkTitleWrapper}>
+                  <p className={styles.squareLinkTitle}>{item.fields.name} </p>
+                  {item.fields.json.discount && <p className={styles.squareLinkSubTitle}>
+                    ({item.fields.json.discount})
+                  </p>}
+                </div>
+              </a>
+            );
+          })}
+        </div>
+
         <div className={`${styles.linkContainer} flex`}>
           {links.map((link) => {
             return (
@@ -110,13 +138,18 @@ export async function getStaticProps() {
     accessToken: process.env.CONTENTFUL_ACCESS_KEY,
   });
 
-  const res = await client.getEntries({
+  const singleLink = await client.getEntries({
     content_type: "links",
+  });
+
+  const imageLink = await client.getEntries({
+    content_type: "imageLink",
   });
 
   return {
     props: {
-      links: res.items,
+      links: singleLink.items,
+      imageLink: imageLink.items,
     },
   };
 }
