@@ -161,6 +161,10 @@
 
 @media (max-width: 420px) {
 
+  .container {
+    padding: 0 1rem;
+  }
+
   .squareLinkWrapper {
     gap: 16px;
   }
@@ -174,11 +178,17 @@
     height: 150px;
   }
 
-  .squareLinkTitleWrapper {
-    max-width: 100%;
+  .squareLinkTitle {
+    font-size: 14px;
   }
 
- 
+  .squareLinkSubTitle {
+    font-size: 13px;
+  }
+
+  .squareLinkTitleWrapper {
+    max-width: 90%;
+  }
 
   .link {
     flex-direction: column;
