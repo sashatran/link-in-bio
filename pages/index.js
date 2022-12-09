@@ -8,7 +8,6 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 
 export default function Home({ links, imageLink }) {
-  console.log(imageLink);
   return (
     <div className={styles.container}>
       <main className={`${styles.main} flex`}>
