@@ -1,5 +1,6 @@
 import styles from "../styles/Home.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faMugSaucer } from "@fortawesome/free-solid-svg-icons";
 import {
   faInstagram,
   faTwitter,
@@ -50,13 +51,16 @@ export default function Home({ links, imageLink }) {
                 <FontAwesomeIcon className={styles.icon} icon={faYoutube} />
               </a>
             </li>
-            <a
-              href="https://vero.co/sashatran/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Vero
-            </a>
+            <li className={styles.coffeeLink}>
+              <a
+                href="https://ko-fi.com/A0A5HKMWR"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FontAwesomeIcon className={styles.icon} icon={faMugSaucer} />
+              </a>
+
+            </li>
           </ul>
         </div>
         <div className={styles.squareLinkWrapper}>
@@ -77,9 +81,11 @@ export default function Home({ links, imageLink }) {
                 ></div>
                 <div className={styles.squareLinkTitleWrapper}>
                   <p className={styles.squareLinkTitle}>{item.fields.name} </p>
-                  {item.fields.json.discount && <p className={styles.squareLinkSubTitle}>
-                    ({item.fields.json.discount})
-                  </p>}
+                  {item.fields.json.discount && (
+                    <p className={styles.squareLinkSubTitle}>
+                      ({item.fields.json.discount})
+                    </p>
+                  )}
                 </div>
               </a>
             );
