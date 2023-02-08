@@ -1,4 +1,5 @@
 import styles from "../styles/Home.module.css";
+import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMugSaucer } from "@fortawesome/free-solid-svg-icons";
 import {
@@ -59,7 +60,6 @@ export default function Home({ links, imageLink }) {
               >
                 <FontAwesomeIcon className={styles.icon} icon={faMugSaucer} />
               </a>
-
             </li>
           </ul>
         </div>
@@ -73,12 +73,13 @@ export default function Home({ links, imageLink }) {
                 className={styles.squareLinkContainer}
                 key={item.sys.id}
               >
-                <div
+                <img className={styles.squareLinkImg} src={item.fields.image.fields.file.url} alt="" />
+                {/* <div
                   className={styles.squareLinkImg}
                   style={{
                     backgroundImage: `url(${item.fields.image.fields.file.url})`,
                   }}
-                ></div>
+                ></div> */}
                 <div className={styles.squareLinkTitleWrapper}>
                   <p className={styles.squareLinkTitle}>{item.fields.name} </p>
                   {item.fields.json.discount && (
