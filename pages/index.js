@@ -27,7 +27,7 @@ export default function Home({ links, imageLink }) {
             </li>
             <li>
               <a
-                href="https://instagram.com/sasha.codes"
+                href="https://instagram.com/sasha.cozy"
                 target="_blank"
                 rel="noreferrer"
               >
