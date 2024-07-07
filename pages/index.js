@@ -36,29 +36,11 @@ export default function Home({ links, imageLink }) {
             </li>
             <li>
               <a
-                href="https://twitter.com/sashattran"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <FontAwesomeIcon className={styles.icon} icon={faTwitter} />
-              </a>
-            </li>
-            <li>
-              <a
                 href="https://www.youtube.com/c/sashax"
                 target="_blank"
                 rel="noreferrer"
               >
                 <FontAwesomeIcon className={styles.icon} icon={faYoutube} />
-              </a>
-            </li>
-            <li className={styles.coffeeLink}>
-              <a
-                href="https://ko-fi.com/A0A5HKMWR"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <FontAwesomeIcon className={styles.icon} icon={faMugSaucer} />
               </a>
             </li>
           </ul>
