@@ -18,7 +18,7 @@ export default function Home({ links, imageLink }) {
           <ul className={`${styles.social} flex`}>
             <li>
               <a
-                href="https://tiktok.com/@sasha.tran"
+                href="https://tiktok.com/@sasha.cozy"
                 target="_blank"
                 rel="noreferrer"
               >
