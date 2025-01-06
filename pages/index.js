@@ -15,6 +15,8 @@ export default function Home({ links, imageLink }) {
       <main className={`${styles.main} flex`}>
         <div className={`${styles.header} flex`}>
           <div className={styles.headerImg}></div>
+          <p className={styles.title}>Sasha</p>
+          <p className={styles.subtitle}>desk setup • gaming • cozy</p>
           <ul className={`${styles.social} flex`}>
             <li>
               <a

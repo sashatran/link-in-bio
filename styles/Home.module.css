@@ -20,7 +20,15 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  gap: 14px;
+}
+
+.title {
+  margin-bottom: 4px;
+}
+
+.subtitle {
+  margin-bottom: 10px;
+  font-size: 14px;
 }
 
 .headerImg {
@@ -30,6 +38,7 @@
   height: 100px;
   background-position: center;
   border-radius: 50px;
+  margin-bottom: 10px;
 }
 
 .social {
