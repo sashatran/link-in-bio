@@ -22,7 +22,7 @@ export default class MyDocument extends Document {
             }}
           />
          
-          <meta name="description" content="Sasha Tran" />
+          <meta name="description" content="sasha cozy, gaming, desk setup, desk decor" />
           <link rel="icon" href="/favicon.ico" />
         </Head>
         <body>
