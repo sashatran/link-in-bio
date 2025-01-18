@@ -76,11 +76,11 @@
 
 .squareLinkWrapper {
   margin-top: 20px;
-  width: 100%;
+  width: 80%;
   justify-content: center;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(40%, 25ch), 1fr));
-  grid-gap: clamp(10px, 3vw, 26px);
+  grid-gap: clamp(10px, 4vw, 30px);
 }
 
 .squareLinkTitleWrapper {
@@ -93,19 +93,20 @@
   margin-top: 0;
   margin-bottom: 6px;
   font-weight: 500;
-  font-size: clamp(14px, 5vw, 1rem);
+  font-size: clamp(14px, 5vw, 0.9rem);
 }
 
 .squareLinkSubTitle {
   margin-top: 0;
   font-size: 15px;
-  font-size: clamp(13px, 4vw, 15px);
+  font-size: clamp(13px, 4vw, 0.9px);
 }
 
 .squareLinkImg {
   width: 100%;
   object-fit: cover;
   aspect-ratio: 1/1;
+  border-radius: 10px;
 }
 
 .linkContainer {
@@ -140,7 +141,7 @@
 
 .linkTitle {
   font-size: 14px;
-  color: #333;
+  color: #44311a;;
   font-weight: 500;
   line-height: 20px;
 }
@@ -184,6 +185,8 @@
 @media (max-width: 420px) {
   .squareLinkTitleWrapper {
     max-width: 90%;
+    margin-top: 7px;
+    font-size: 12px;
   }
 
   .link {
