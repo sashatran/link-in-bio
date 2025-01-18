@@ -2,7 +2,7 @@
 
 .container {
   padding: 0 clamp(1rem, 4vw, 2rem);
-  background: linear-gradient(45deg, #a0aedd, #c0e7b0);
+  background: #ede7e0;
   color: #333;
 }
 
@@ -50,11 +50,27 @@
 
 .social li {
   margin: 0 15px;
+  width: 100%;
+  height:100%;
+  padding: 5px;
+  border-radius: 5px;
 }
 
 .icon {
   width: 16px;
   height: 16px;
+}
+
+.pink {
+  background-color: #f8cee5;
+}
+
+.green {
+  background-color: #e3ecd1;
+}
+
+.yellow {
+  background-color: #f2de91;
 }
 
 .squareLinkWrapper {
