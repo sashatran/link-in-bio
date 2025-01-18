@@ -183,6 +183,9 @@
 }
 
 @media (max-width: 420px) {
+  .squareLinkWrapper {
+    width: 90%;
+  }
   .squareLinkTitleWrapper {
     max-width: 90%;
     margin-top: 7px;
