@@ -38,7 +38,7 @@ export default function Home({ links, imageLink }) {
             </li>
             <li>
               <a
-                href="https://www.youtube.com/c/sashax"
+                href="https://www.youtube.com/@sashacozy"
                 target="_blank"
                 rel="noreferrer"
               >
